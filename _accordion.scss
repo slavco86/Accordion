@@ -1,0 +1,18 @@
+.accordion__activator {
+  @extend %unstyle-button;
+  @include theme-color(primary, color);
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  cursor: pointer;
+
+  @include mq('phone') {
+    position: relative;
+  }
+
+  &:hover {
+    @include theme-color(white, color);
+    @include theme-color(primary, background-color);
+  }
+}

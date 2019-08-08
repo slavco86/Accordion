@@ -1,0 +1,20 @@
+.expansion-panel {
+  border-bottom: solid $grey-light 1px;
+
+  &:first-child {
+    border-top: solid $grey-light 1px;
+  }
+}
+
+.expansion-panel__header {
+  position: relative;
+  @include mq('phone') {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.expansion-panel__content {
+  transition: 0.5s;
+  overflow: hidden;
+}
